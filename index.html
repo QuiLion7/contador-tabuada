@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador e Tabuada</title>
+    <link rel="stylesheet" href="./assets/style/style.css"/>
+</head>
+<body>
+   <header>
+        <h1 id="titleContador">Vamos Contar?</h1>
+        <label for="">
+            <input type="checkbox" name="" id="escolher" onclick="escolher()">
+            <span id="span"></span>
+        </label>
+        <h1 id="tittleTabuada">Sabe a Tabuada?</h1>
+   </header>
+    <section>
+        <section id="container">
+            <div id="containerFormTabuada">
+                <div class="formTabuada">
+                    <p>Qual o Número?</p>
+                    <input class="form-input-tabuada" type="number" name="num" id="txtnum" min="0" placeholder="Digite um nº">
+                </div>
+                    <p>
+                        <input type="button" value="GERAR" id="btntabuada" onclick="tabuada()">
+                    </p>
+            </div>
+            <div id="containerContador">
+                <div class="form">
+                    <p>Inicio:</p>
+                    <input class="form-input" type="number" name="txtinicio" id="txtinicio" min="0" placeholder="nº inicial">
+               </div>
+               <div class="form">
+                    <p>Fim:</p>
+                    <input class="form-input" type="number" name="txtfim" id="txtfim" min="0" placeholder="nº final">
+               </div>
+               <div class="form">
+                    <p>Passo:</p>
+                    <input class="form-input" type="number" name="txtpasso" id="txtpasso" min="0" placeholder="de nº em nº">
+               </div>
+            </div>
+            <p id="click">
+                <input type="button" value="CONTAR" id="contar" onclick="contar()">
+            </p>
+            </div>
+            <textarea id="resultado">Preparando a contagem...</textarea>
+            <input type="button" value="RESETAR" id="resetar" onclick="resetar()">
+        </section>
+    </section>
+    <footer>
+        <div id="ref"> <p>Codificado com muito entusiasmo por</p><a href="">Quilion Oliveira</a></div>
+        <div id="banner--logos--footer">
+            <a href="https://github.com/QuiLion7?tab=repositories" target="_blank">
+                <img src="assets/images/github.png" />
+            </a>
+            <a href="https://www.linkedin.com/in/quilion-oliveira-18820b31/" target="_blank">
+                <img src="assets/images/linkedin.png" />
+            </a>
+            <a href="mailto:quilbrub@gmail.com" target="_blank">
+                <img src="assets/images/gmail.png" />
+            </a> 
+            <a href="https://www.instagram.com/quilion7/" target="_blank">
+                <img src="assets/images/instagram.png" />
+            </a>
+            <a href="https://www.facebook.com/QuiLion/" target="_blank">
+                <img src="assets/images/facebook.png" />
+            </a> 
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
